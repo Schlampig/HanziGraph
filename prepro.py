@@ -340,7 +340,7 @@ def create_character_dictionary(dict_part, dict_number, is_save=False):
 
 def add_similar_char(dict_char, dict_form=None, dict_phone=None, dict_corner=None, dict_corner_idx=None, top_k=-1, is_save=False):
     """
-
+    根据形近字、音近字、四角编码，在基础字典上为每个字添加相似字。
     :param dict_char: dictionary generated in create_character_dictionary()
     :param dict_form: dictionary generated in create_form_similar_dictionary()
     :param dict_phone: dictionary generated in create_phone_similar_dictionary()

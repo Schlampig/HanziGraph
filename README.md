@@ -15,8 +15,13 @@ I try to intergrate several open source Chinese characters or words corpora to b
          |-> char_split: 汉字拆字、简繁字体对照材料
          |-> basic_dictionary_similar.json
          |-> basic_triple.xlsx
+  |-> corpus_handian -> word_handian: 现代汉语词典材料 (todo)
+                    |-> get_handian.py (todo)
+  |-> corpus_dacilin -> word_dacilin: 大词林材料 (todo)
+                    |-> get_dacilin.py (todo)              
   |-> prepro.py
   |-> build_graph.py (todo)
+  |-> text_augmentation.py  (todo)
 ```
 
 <br>

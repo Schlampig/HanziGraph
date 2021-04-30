@@ -1,5 +1,5 @@
 # HanziGraph
-Visualization for information about Chinese characters via Neo4j.
+Visualization for information about Chinese characters via Neo4j & Text augmentation via Chinese characters and words (typos, synonym, antonym, similar entity, numeric, etc.).
 
 ## Intorduction:
 I try to intergrate several open source Chinese characters or words corpora to build a visualized graph for these characters, motivated by the demand to deal with character-level similarity comparison, nlp data-augumentation, and curiosity (｡･ω･｡)ﾉ

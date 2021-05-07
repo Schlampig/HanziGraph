@@ -22,9 +22,9 @@ I try to intergrate several open source Chinese characters or words corpora to b
          |-> basic_triple.xlsx
          |-> corpus_handian -> word_handian: 现代汉语词典材料、生成的json数据
                            |-> get_handian.py  # 处理汉典数据的脚本
+                           |-> combine_n.py  # 合并汉典与词林名词数据的脚本
          |-> corpus_dacilin -> word_dacilin: 大词林材料、生成的json数据
                            |-> get_dacilin.py  # 处理词林数据的脚本
-                           |-> combine_n.py  # 合并汉典与词林名词数据的脚本
   |-> prepro.py  # 预处理汉字各数据集的脚本
   |-> (todo) build_graph.py  # 生成汉字图谱的脚本
   |-> (todo) text_augmentation.py  # 利用词典扩增文本的脚本

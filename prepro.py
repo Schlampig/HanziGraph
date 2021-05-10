@@ -535,5 +535,70 @@ def run():
     return None
 
 
+def create_corpus4typos(dict_char=None, dict_form=None, dict_phone=None, dict_corner=None, dict_corner_idx=None):
+    """
+    利用basic_dictionary_similar.json字典数据，生成用于数据扩增的、更便捷的形/音近字字典
+    :param dict_char: dictionary generated in add_similar_char() after create_character_dictionary()
+    :param dict_form: dictionary generated in create_form_similar_dictionary()
+    :param dict_phone: dictionary generated in create_phone_similar_dictionary()
+    :param dict_corner: dictionary generated in create_corner_dictionary()
+    :param dict_corner_idx: dictionary generated in create_corner_dictionary()
+    :return: corpus4typos = {字: char_info, ...}
+             where, char_info = {"number": 笔画数,
+                                 "similar_phone": [[音近字, 该字笔画数], ...],
+                                 "similar_form": [[形近字, 该字笔画数], ...]}
+             音近字与形近字列表按笔画数递增排序。
+    """
+    if dict_form is None:
+        dict_form = create_form_similar_dictionary()
+    if dict_phone is None:
+        dict_phone = create_phone_similar_dictionary()
+    if dict_corner is None or dict_corner_idx is None:
+        dict_corner, dict_corner_idx = create_corner_dictionary()
+    if dict_char is None:
+        if not os.path.exists("corpus/basic_dictionary_similar.json"):
+            run()
+        with open("corpus/basic_dictionary_similar.json", "r") as f:
+            dict_char = json.load(f)
+    dict_typos = dict()
+    for char in tqdm(dict_char.keys()):
+        lst_phone, lst_form = list(), list()
+        # 形近字
+        if char in dict_form.keys():
+            lst_form.extend(dict_form.get(char))
+        # 音近字
+        if char in dict_phone.keys():
+            lst_phone.extend(dict_phone.get(char))
+        # 四角相同字
+        if char in dict_corner.keys():
+            if dict_corner.get(char) in dict_corner_idx.keys():
+                lst_form.extend(dict_corner_idx.get(dict_corner.get(char)))
+        # 音近字笔画排序
+        lst_phone = list(set(lst_phone))
+        similar_phone = list()
+        for phone_char in lst_phone:
+            if phone_char in dict_char.keys():
+                d_phone = dict_char[phone_char]
+                if d_phone.get("number", None):
+                    similar_phone.append([phone_char, d_phone["number"]])
+        similar_phone.sort(key=lambda x: x[1])  # 笔画由少到多
+        # 形近字笔画排序
+        lst_form = list(set(lst_form))
+        similar_form = list()
+        for form_char in lst_form:
+            if form_char in dict_char.keys():
+                d_form = dict_char[form_char]
+                if d_form.get("number", None):
+                    similar_form.append([form_char, d_form["number"]])
+        similar_form.sort(key=lambda x: x[1])  # 笔画由少到多
+        dict_typos.update({char: {"number": dict_char[char].get("number", -1),
+                                  "similar_phone": similar_phone,
+                                  "similar_form": similar_form}})
+    # save
+    with open("corpus/corpus_handian/word_handian/corpus4typos.json", "w") as f:
+        json.dump(dict_typos, f, ensure_ascii=False, indent=2)
+    return None
+
+
 if __name__ == "__main__":
     run()

@@ -50,6 +50,7 @@ entry (i.e. each character) = {
 ```
 * [**basic_triple.xlsx**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/basic_triple.xlsx): a file in xlsx format has (head, relation, tail) triple in each row transformed from **basic_dictionary_similar.json**.
 * **hanzi_entity.csv** and **hanzi_relation.csv**: two necessary files in csv format to build the graph in Neo4j, transformed from **basic_triple.xlsx** (todo).
+* [**corpus4n**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4n.json), [**corpus4v**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4v.json), [**corpus4adj**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4adj.json), [**corpus4adv**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4adv.json), [**corpus4typos**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4typos.json) are dictionary in .json format for text augmentation function.
 
 <br>
 
@@ -70,6 +71,9 @@ python build_graph.py
 ```bash
 ./neo4j console
 ```
+* **generate dictionaries for text augmentation**: using functions from [**get_handian.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/get_handian.py) and [**get_dacilin.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_dacilin/get_dacilin.py), and function **create_corpus4typos** in [**prepro.py**](https://github.com/Schlampig/HanziGraph/blob/main/prepro.py) to generate dictionaries for text augmentation.
+
+* **text augmentation**: using functions in **text_augmentation.py**(todo) to generate new samples.
 
 <br>
 

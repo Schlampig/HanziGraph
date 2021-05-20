@@ -67,7 +67,7 @@ python build_graph.py
 ```
 * **import data into Neo4j**: this code is used in command line to import entity/relation-based data to Neo4j:
 ```bash
-./neo4j-import -into /your_path/neo4j-community-3.5.5/data/databases/graph.db/ --nodes /Users/schwein/neo4j-data/hanzi_entity.csv --relationships /Users/schwein/neo4j-data/hanzi_relation.csv --ignore-duplicate-nodes=true --ignore-missing-nodes=true
+./neo4j-import -into /your_path/neo4j-community-3.5.5/data/databases/graph.db/ --nodes /your_path/hanzi_entity.csv --relationships /your_path/hanzi_relation.csv --ignore-duplicate-nodes=true --ignore-missing-nodes=true
 ```
 * **start up Neo4j**: open the browser, input the address http://localhost:7474/, check the graph:
 ```bash

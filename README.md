@@ -8,11 +8,6 @@ Visualization for information about Chinese characters via Neo4j & Text augmenta
 
 <br>
 
-## Demonstration
-(TODO)
-
-<br>
-
 ## File Dependency:
 ```
 -> corpus -> char_number: 汉字笔画材料
@@ -28,7 +23,7 @@ Visualization for information about Chinese characters via Neo4j & Text augmenta
          |-> corpus_dacilin -> word_dacilin: 大词林材料、生成的json数据
                            |-> get_dacilin.py  # 处理词林数据的脚本
   |-> prepro.py  # 预处理汉字各数据集的脚本
-  |-> (todo) build_graph.py  # 生成汉字图谱的脚本
+  |-> build_graph.py  # 生成汉字图谱的脚本
   |-> (todo) text_augmentation.py  # 利用词典扩增文本的脚本
 ```
 
@@ -50,8 +45,8 @@ entry (i.e. each character) = {
                                "similar_to(有哪些近似字)": [char(字), ...]
                                }
 ```
-* [**basic_triple.xlsx**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/basic_triple.xlsx): a file in xlsx format has (head, relation, tail) triple in each row transformed from **basic_dictionary_similar.json**.
-* **hanzi_entity.csv** and **hanzi_relation.csv**: two necessary files in csv format to build the graph in Neo4j, transformed from **basic_triple.xlsx** (todo).
+* [**basic_triple.xlsx**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/basic_triple.xlsx): a file in xlsx format has (head, relation, tail) triple in each row transformed from [**basic_dictionary_similar.json**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/basic_dictionary_similar.json).
+* **hanzi_entity.csv** and **hanzi_relation.csv**: two necessary files in csv format to build the graph in Neo4j, transformed from [**basic_triple.xlsx**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/basic_triple.xlsx), too large to upload here.
 * [**corpus4n**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4n.json), [**corpus4v**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4v.json), [**corpus4adj**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4adj.json), [**corpus4adv**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4adv.json), [**corpus4typos**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/word_handian/corpus4typos.json) are dictionary in .json format for text augmentation function.
 
 <br>
@@ -61,7 +56,7 @@ entry (i.e. each character) = {
 ```bash
 python prepro.py
 ```
-* **build_graph**: this code(todo) is used to transfor the triple-based data into entity/relation-based data:
+* **build_graph**: this [code](https://github.com/Schlampig/HanziGraph/blob/main/build_graph.py) is used to transfor the triple-based data into entity/relation-based data:
 ```bash
 python build_graph.py
 ```
@@ -75,7 +70,7 @@ python build_graph.py
 ```
 * **generate dictionaries for text augmentation**: using functions from [**get_handian.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/get_handian.py) and [**get_dacilin.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_dacilin/get_dacilin.py), and function **create_corpus4typos** in [**prepro.py**](https://github.com/Schlampig/HanziGraph/blob/main/prepro.py) to generate dictionaries for text augmentation.
 
-* **text augmentation**: using functions in **text_augmentation.py**(todo) to generate new samples.
+* **text augmentation**: using functions in this [code](todo) to generate new samples.
 
 <br>
 

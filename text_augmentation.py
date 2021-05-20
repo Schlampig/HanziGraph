@@ -20,6 +20,7 @@ with open("corpus/corpus_handian/word_handian/corpus4n.json", "r") as f:
     
 
 def twist_num(q):
+    # 找出q中的数字并随意换成其他数字
     global ltp
     lst_q = list()
     ltp_word, hidden = ltp.seg([q])
@@ -66,6 +67,7 @@ def update_typos(char):
     
 
 def twist_typos(q):
+    # 找出q中的某个字并替换成形/音近字
     global ltp
     lst_candi = list()
     ltp_word, hidden = ltp.seg([q])
@@ -93,6 +95,7 @@ def twist_typos(q):
 
 
 def twist_synonym(q, pos_tag="v"):
+    # 找出q中的某个名/动/副/形容词替换成其同/近义词
     global dict_v, dict_adj, dict_adv, dict_n, ltp
     # set conditions
     if pos_tag == "v":
@@ -131,6 +134,7 @@ def twist_synonym(q, pos_tag="v"):
 
 
 def twist_antonym(q, pos_tag="v"):
+    # 找出q中的某个名/动/副/形容词替换成其反义词
     global dict_v, dict_adj, dict_adv, dict_n, ltp
     # set conditions
     if pos_tag == "v":
@@ -180,6 +184,21 @@ def show_fix_input():
     print(twist_antonym("他最后是快乐地接受了这个悲惨的结局吗", "adj"))
     print(twist_antonym("他最后是快乐地接受了这个悲惨的结局吗", "adv"))
     print(twist_antonym("他最后是快乐地接受了这个悲惨的结局吗", "n"))
+    return None
+
+
+def show_self_defined_input(q):
+    print(twist_num(q))
+    print(twist_num(q))
+    print(twist_typos(q))
+    print(twist_synonym(q, "v"))
+    print(twist_synonym(q, "adj"))
+    print(twist_synonym(q, "adv"))
+    print(twist_synonym(q, "n"))
+    print(twist_antonym(q, "v"))
+    print(twist_antonym(q, "adj"))
+    print(twist_antonym(q, "adv"))
+    print(twist_antonym(q, "n"))
     return None
 
 

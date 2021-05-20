@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 # settings
 ltp = LTP()
-with open("corpus/corpus4typos.json", "r") as f:
+with open("corpus/corpus_handian/word_handian/corpus4typos.json", "r") as f:
     dict_typos = json.load(f)
 with open("corpus/corpus_handian/word_handian/corpus4v.json", "r") as f:
     dict_v = json.load(f)

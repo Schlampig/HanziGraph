@@ -5,16 +5,17 @@ from random import shuffle, choice
 from ltp import LTP
 from tqdm import tqdm
 
+# settings
 ltp = LTP()
 with open("corpus/corpus4typos.json", "r") as f:
     dict_typos = json.load(f)
-with open("corpus/corpus4v.json", "r") as f:
+with open("corpus/corpus_handian/word_handian/corpus4v.json", "r") as f:
     dict_v = json.load(f)
-with open("corpus/corpus4adj.json", "r") as f:
+with open("corpus/corpus_handian/word_handian/corpus4adj.json", "r") as f:
     dict_adj = json.load(f)
-with open("corpus/corpus4adv.json", "r") as f:
+with open("corpus/corpus_handian/word_handian/corpus4adv.json", "r") as f:
     dict_adv = json.load(f)
-with open("corpus/corpus4n.json", "r") as f:
+with open("corpus/corpus_handian/word_handian/corpus4n.json", "r") as f:
     dict_n = json.load(f)
     
 

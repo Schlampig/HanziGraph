@@ -24,7 +24,7 @@ Visualization for information about Chinese characters via Neo4j & Text augmenta
                            |-> get_dacilin.py  # 处理词林数据的脚本
   |-> prepro.py  # 预处理汉字各数据集的脚本
   |-> build_graph.py  # 生成汉字图谱的脚本
-  |-> (todo) text_augmentation.py  # 利用词典扩增文本的脚本
+  |-> text_augmentation.py  # 利用词典扩增文本的脚本
 ```
 
 <br>
@@ -70,7 +70,10 @@ python build_graph.py
 ```
 * **generate dictionaries for text augmentation**: using functions from [**get_handian.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/get_handian.py) and [**get_dacilin.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_dacilin/get_dacilin.py), and function **create_corpus4typos** in [**prepro.py**](https://github.com/Schlampig/HanziGraph/blob/main/prepro.py) to generate dictionaries for text augmentation.
 
-* **text augmentation**: using functions in this [code](todo) to generate new samples.
+* **text augmentation**: using functions in this [code](https://github.com/Schlampig/HanziGraph/blob/main/text_augmentation.py) to generate new samples. Run the code to see examples.
+```bash
+python text_augmentation.py
+```
 
 <br>
 
@@ -80,6 +83,7 @@ python build_graph.py
   * pypinyin = 0.41.0
   * pandas = 0.22.0
   * fuzzywuzzy = 0.17.0
+  * [LTP 4](https://github.com/HIT-SCIR/ltp)
   * tqdm = 4.39.0
 
 <br>

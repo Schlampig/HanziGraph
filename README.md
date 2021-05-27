@@ -70,7 +70,7 @@ python build_graph.py
 ```
 * **generate dictionaries for text augmentation**: using functions from [**get_handian.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/get_handian.py) and [**get_dacilin.py**](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_dacilin/get_dacilin.py), and function **create_corpus4typos** in [**prepro.py**](https://github.com/Schlampig/HanziGraph/blob/main/prepro.py) to generate dictionaries for text augmentation.
 
-* **text augmentation**: using functions in this [code](https://github.com/Schlampig/HanziGraph/blob/main/text_augmentation.py) to generate new samples. Run the code to see examples.
+* **text augmentation**: using functions in this [code](https://github.com/Schlampig/HanziGraph/blob/main/text_augmentation.py) to generate new samples. Run the code to see examples. The detailed design method could be found [here](https://github.com/Schlampig/HanziGraph/blob/main/corpus/corpus_handian/README.md).
 ```bash
 python text_augmentation.py
 ```

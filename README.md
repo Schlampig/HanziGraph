@@ -106,5 +106,10 @@ python text_augmentation.py
 
 <br>
 
+## Use Case
+  * [2021语言与智能技术竞赛(2021 Language and Intelligence Challenge, LIC2021)](http://lic2021.ccf.org.cn/): more complicated data augmentation plan based on dictionaries of this project is used for top 6 group (detailed group name is private now).
+
+<br>
+
 <img src="https://github.com/Schlampig/Knowledge_Graph_Wander/blob/master/content/daily_ai_paper_view.png" height=25% width=25% />
 

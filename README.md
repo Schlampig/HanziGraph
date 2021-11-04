@@ -106,9 +106,11 @@ python text_augmentation.py
 
 <br>
 
+## Cite this work as:
+  * Chen J., He Z., Zhu Y., Xu L. (2021) [TKB 2ert: Two-Stage Knowledge Infused Behavioral Fine-Tuned BERT](https://link.springer.com/chapter/10.1007/978-3-030-88483-3_35). In: Wang L., Feng Y., Hong Y., He R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2021. Lecture Notes in Computer Science, vol 13029. Springer, Cham. https://doi.org/10.1007/978-3-030-88483-3_35
+
 ## Use Case
   * [2021语言与智能技术竞赛(2021 Language and Intelligence Challenge, LIC2021)](http://lic2021.ccf.org.cn/): more complicated data augmentation plan based on dictionaries of this project is used for one winning team (team name is private now).
-
 <br>
 
 <img src="https://github.com/Schlampig/Knowledge_Graph_Wander/blob/master/content/daily_ai_paper_view.png" height=25% width=25% />

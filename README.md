@@ -106,7 +106,7 @@ python text_augmentation.py
 <br>
 
 ## Cite this work as:
-  * Chen J., He Z., Zhu Y., Xu L. (2021) [TKB^{2}ert: Two-Stage Knowledge Infused Behavioral Fine-Tuned BERT](https://link.springer.com/chapter/10.1007/978-3-030-88483-3_35). In: Wang L., Feng Y., Hong Y., He R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2021. Lecture Notes in Computer Science, vol 13029. Springer, Cham. https://doi.org/10.1007/978-3-030-88483-3_35
+  * Chen J., He Z., Zhu Y., Xu L. (2021) [TKB^2^ert: Two-Stage Knowledge Infused Behavioral Fine-Tuned BERT](https://link.springer.com/chapter/10.1007/978-3-030-88483-3_35). In: Wang L., Feng Y., Hong Y., He R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2021. Lecture Notes in Computer Science, vol 13029. Springer, Cham. https://doi.org/10.1007/978-3-030-88483-3_35
 <br>
 
 ## Use Case

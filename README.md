@@ -103,11 +103,11 @@ python text_augmentation.py
   * [funNLP](https://github.com/fighting41love/funNLP) by Yang fighting41love.
   * [《现代汉语词典》（第7版）](https://github.com/CNMan/XDHYCD7th) by CNMan.
   * [chinese-xinhua 中华新华字典数据库](https://github.com/pwxcoo/chinese-xinhua) by Xiance Wu.
-
 <br>
 
 ## Cite this work as:
-  * Chen J., He Z., Zhu Y., Xu L. (2021) [TKB 2ert: Two-Stage Knowledge Infused Behavioral Fine-Tuned BERT](https://link.springer.com/chapter/10.1007/978-3-030-88483-3_35). In: Wang L., Feng Y., Hong Y., He R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2021. Lecture Notes in Computer Science, vol 13029. Springer, Cham. https://doi.org/10.1007/978-3-030-88483-3_35
+  * Chen J., He Z., Zhu Y., Xu L. (2021) [TKB^{2}ert: Two-Stage Knowledge Infused Behavioral Fine-Tuned BERT](https://link.springer.com/chapter/10.1007/978-3-030-88483-3_35). In: Wang L., Feng Y., Hong Y., He R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2021. Lecture Notes in Computer Science, vol 13029. Springer, Cham. https://doi.org/10.1007/978-3-030-88483-3_35
+<br>
 
 ## Use Case
   * [2021语言与智能技术竞赛(2021 Language and Intelligence Challenge, LIC2021)](http://lic2021.ccf.org.cn/): more complicated data augmentation plan based on dictionaries of this project is used for one winning team (team name is private now).

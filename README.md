@@ -112,6 +112,7 @@ python text_augmentation.py
 ## Use Case
   * [2021语言与智能技术竞赛(2021 Language and Intelligence Challenge, LIC2021)](http://lic2021.ccf.org.cn/): more complicated data augmentation plan based on dictionaries of this project is used for one winning team (team name is private now).
 <br>
+  * [2021 CCF BDCI 千言-问题匹配鲁棒性评测](https://aistudio.baidu.com/aistudio/competition/detail/116/0/introduction).
 
 <img src="https://github.com/Schlampig/Knowledge_Graph_Wander/blob/master/content/daily_ai_paper_view.png" height=25% width=25% />
 

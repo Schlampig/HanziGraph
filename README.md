@@ -103,6 +103,7 @@ python text_augmentation.py
   * [funNLP](https://github.com/fighting41love/funNLP) by Yang fighting41love.
   * [《现代汉语词典》（第7版）](https://github.com/CNMan/XDHYCD7th) by CNMan.
   * [chinese-xinhua 中华新华字典数据库](https://github.com/pwxcoo/chinese-xinhua) by Xiance Wu.
+  * [CJKV (Chinese Japanese Korean Vietnamese) Ideograph Database](https://github.com/cjkvi) by CJKVI.
 <br>
 
 ## Cite this work as:

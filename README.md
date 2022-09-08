@@ -104,6 +104,8 @@ python text_augmentation.py
   * [《现代汉语词典》（第7版）](https://github.com/CNMan/XDHYCD7th) by CNMan.
   * [chinese-xinhua 中华新华字典数据库](https://github.com/pwxcoo/chinese-xinhua) by Xiance Wu.
   * [CJKV (Chinese Japanese Korean Vietnamese) Ideograph Database](https://github.com/cjkvi) by CJKVI.
+
+:book: [See more ...](https://github.com/Schlampig/Knowledge_Graph_Wander/blob/master/content/Dictionary.md)
 <br>
 
 ## Cite this work as:

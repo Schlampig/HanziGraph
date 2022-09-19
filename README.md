@@ -89,7 +89,7 @@ python text_augmentation.py
   * pypinyin = 0.41.0
   * pandas = 0.22.0
   * fuzzywuzzy = 0.17.0
-  * [LTP 4](https://github.com/HIT-SCIR/ltp)
+  * [LTP 4](https://github.com/HIT-SCIR/ltp) = [4.0.9](https://github.com/HIT-SCIR/ltp/releases/tag/v4.0.9)
   * tqdm = 4.39.0
 
 <br>
